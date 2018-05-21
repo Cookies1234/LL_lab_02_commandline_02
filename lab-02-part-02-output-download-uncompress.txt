@@ -111,7 +111,7 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-
+curl -o google.html
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
@@ -127,7 +127,7 @@ pwd
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-~
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -143,7 +143,7 @@ Use ls to verify that it downloaded.
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
 
-curl http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/02/mtec1002-lab-02.zip
+curl -o mtec1002-lab-02.zip http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/02/mtec1002-lab-02.zip
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
@@ -151,7 +151,7 @@ curl http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/02/mtec1002-l
 Write down the command that you used to uncompress the file.
 ----------
 
-
+unzip mtec1002-lab-02.zip
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
@@ -159,7 +159,7 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
-
+books
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -169,7 +169,7 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+Dannyliu	stuff
 
 
 ==========
@@ -181,6 +181,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
+hello.txt
 
 
 
@@ -203,7 +204,8 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
@@ -211,7 +213,9 @@ Copy and paste the output below.
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Applications		Documents		Movies			Public			my-stuff
+Dannyliu		Downloads		Music			mtec1002		stuff
+Desktop			Library			Pictures		mtec1002-lab-02.zip	stuff.tar
 
 
 ==========
@@ -221,6 +225,9 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
+Applications		Documents		Movies			Public			my-stuff
+Dannyliu		Downloads		Music			mtec1002		stuff
+Desktop			Library			Pictures		mtec1002-lab-02.zip	stuff.tar.gz
 
 
 
